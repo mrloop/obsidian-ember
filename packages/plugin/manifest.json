@@ -1,0 +1,10 @@
+{
+	"id": "ember",
+	"name": "Ember",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "",
+	"author": "Ewan McDougall",
+	"authorUrl": "https://mrloop.com",
+	"isDesktopOnly": false
+}
