@@ -5,7 +5,7 @@
   "description": "Preview component for obsidian-ember plugin",
   "repository": "",
   "license": "MIT",
-  "author": "",
+  "author": "mrloop",
   "directories": {
     "doc": "doc",
     "test": "tests"

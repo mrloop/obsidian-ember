@@ -1,13 +1,19 @@
 {
-  "name": "ember",
+  "name": "obsidian-ember",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "version": "./version-bump.sh"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "obsidian",
+    "obsidian-plugin",
+    "obsidian-md",
+    "ember"
+  ],
+  "author": "mrloop",
   "license": "ISC",
   "packageManager": "pnpm@10.5.2"
 }
