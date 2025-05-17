@@ -2,7 +2,7 @@
   "name": "preview",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for preview goes here",
+  "description": "Preview component for obsidian-ember plugin",
   "repository": "",
   "license": "MIT",
   "author": "",

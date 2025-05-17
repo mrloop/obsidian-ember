@@ -1,7 +1,6 @@
 # preview
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is an Ember application used in the obsidian-ember plugin to preview `gjs` and `gts` code blocks in Obsidian.
 
 ## Prerequisites
 
@@ -22,8 +21,9 @@ You will need the following things properly installed on your computer.
 ## Running / Development
 
 - `pnpm start`
-- Visit your app at [http://localhost:4200](http://localhost:4200).
+- Visit your app at [http://localhost:4200](http://localhost:4200?lang=gjs&source=<template>my template</template>).
 - Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
+
 
 ### Code Generators
 

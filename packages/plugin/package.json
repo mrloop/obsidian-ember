@@ -1,7 +1,7 @@
 {
   "name": "obsidian-ember",
   "version": "1.0.0",
-  "description": "",
+  "description": "Render Ember components in Obsidian",
   "main": "main.js",
   "scripts": {
     "dev": "node esbuild.config.mjs",
