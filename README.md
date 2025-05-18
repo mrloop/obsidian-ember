@@ -5,15 +5,12 @@ This is the monorepo for the obsidian-ember plugin and preview app. It previews 
 
 ## Releasing
 
+If needed update the minAppVersion in `packages/plugin/manifest.json` to the version of Obsidian you want to support.
+Run `pnpm version patch`
+
 ### Plugin
 
 The plugin is released automatically by the CI/CD pipeline.
-
-```bash
-pnpm --filter plugin build
-pnpm --filter plugin version patch|minor|major
-git tag -a 1.0.1 -m "1.0.1"
-```
 
 ### Preview App
 
