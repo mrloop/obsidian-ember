@@ -2,7 +2,7 @@
   "name": "preview",
   "version": "1.1.2",
   "private": true,
-  "description": "Preview component for obsidian-ember plugin",
+  "description": "Preview component for obsidian ember plugin",
   "repository": "",
   "license": "MIT",
   "author": "mrloop",

@@ -1,31 +1,27 @@
 # Obsidian Ember Plugin
 
-This is the obsidian-ember plugin for Obsidian (https://obsidian.md). It previews `gjs` and `gts` code blocks in Obsidian.
+This is the Ember plugin for Obsidian (https://obsidian.md). It previews `gjs` code blocks in Obsidian.
 
-This project uses TypeScript to provide type checking and documentation.
-The repo depends on the latest plugin API (obsidian.d.ts) in TypeScript Definition format, which contains TSDoc comments describing what it does.
+https://github.com/user-attachments/assets/ee3a1d97-fe3e-4eaa-a4f2-410956ee95bd
 
-## Releasing new releases
+## Releasing
 
-- Update your `manifest.json` with your new version number, such as `1.0.1`, and the minimum Obsidian version required for your latest release.
-- Update your `versions.json` file with `"new-plugin-version": "minimum-obsidian-version"` so older versions of Obsidian can download an older version of your plugin that's compatible.
-- Create new GitHub release using your new version number as the "Tag version". Use the exact version number, don't include a prefix `v`. See here for an example: https://github.com/obsidianmd/obsidian-sample-plugin/releases
-- Upload the files `manifest.json`, `main.js`, `styles.css` as binary attachments. Note: The manifest.json file must be in two places, first the root path of your repository and also in the release.
-- Publish the release.
-
-> You can simplify the version bump process by running `npm version patch`, `npm version minor` or `npm version major` after updating `minAppVersion` manually in `manifest.json`.
-> The command will bump version in `manifest.json` and `package.json`, and add the entry for the new version to `versions.json`
+See the monorepo [README.md](../../README.md) for instructions on how to release this plugin.
 
 ## How to use
 
 - Clone this repo.
-- Make sure your NodeJS is at least v16 (`node --version`).
-- `npm i` or `yarn` to install dependencies.
-- `npm run dev` to start compilation in watch mode.
+- Make sure your NodeJS is at least v22 (`node --version`).
+- `pnpm install` to install dependencies.
+- `pnpm run dev` to start compilation in watch mode.
 
 ## Manually installing the plugin
 
-- Copy over `main.js`, `styles.css`, `manifest.json` to your vault `VaultFolder/.obsidian/plugins/your-plugin-id/`.
+- Copy over `main.js`, `styles.css`, `manifest.json` to your vault `VaultFolder/.obsidian/plugins/obsidian-ember/`.
+
+## Symbolic linking plugin for development
+
+- `ln -s $(pwd) VaultFolder/.obsidian/plugins/obsidian-ember`
 
 ## Improve code quality with eslint (optional)
 - [ESLint](https://eslint.org/) is a tool that analyzes your code to quickly find problems. You can run ESLint against your plugin to find common bugs and ways to improve your code. 

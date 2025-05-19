@@ -1,6 +1,8 @@
 # Obsidian Ember Plugin
 
-This is the monorepo for the obsidian-ember plugin and preview app. It previews `gjs` code blocks in [Obsidian](https://obsidian.md).
+This is the monorepo for the obsidian ember plugin and preview app. It previews `gjs` code blocks in [Obsidian](https://obsidian.md).
+
+https://github.com/user-attachments/assets/ee3a1d97-fe3e-4eaa-a4f2-410956ee95bd
 
 ## Releasing
 
@@ -19,4 +21,4 @@ The plugin is released automatically by the CI/CD pipeline.
 
 ### Preview App
 
-The preview app is deployed automatically by the CI/CD pipeline to Netlify. Any changes to the main branch will automatically be deployed by Netlify.
+The preview app is deployed automatically by the CI/CD pipeline to Netlify. 

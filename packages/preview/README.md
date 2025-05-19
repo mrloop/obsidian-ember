@@ -1,6 +1,6 @@
 # preview
 
-This is an Ember application used in the obsidian-ember plugin to preview `gjs` and `gts` code blocks in Obsidian.
+This is an Ember application used in the obsidian ember plugin to preview `gjs` code blocks in Obsidian.
 
 ## Prerequisites
 
@@ -46,7 +46,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+See the monorepo [README.md](../../README.md) for instructions on how to release this plugin.
 
 ## Further Reading / Useful Links
 

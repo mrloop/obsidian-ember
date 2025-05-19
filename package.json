@@ -14,7 +14,7 @@
     "ember"
   ],
   "author": "mrloop",
-  "license": "ISC",
+  "license": "MIT",
   "packageManager": "pnpm@10.5.2",
   "optionalDependencies": {
     "netlify-cli": "^21.4.2"
