@@ -16,6 +16,9 @@
   "author": "mrloop",
   "license": "MIT",
   "packageManager": "pnpm@10.5.2",
+  "pnpm": {
+    "tagVersionPrefix": ""
+  },
   "optionalDependencies": {
     "netlify-cli": "^21.4.2"
   }
