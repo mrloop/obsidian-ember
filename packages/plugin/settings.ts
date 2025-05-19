@@ -1,5 +1,5 @@
-import { App, PluginSettingTab, Setting } from 'obsidian';
-import EmberPlugin from './main';
+import { App, PluginSettingTab, Setting } from "obsidian";
+import EmberPlugin from "./main";
 
 export class EmberPluginSettingTab extends PluginSettingTab {
   plugin: EmberPlugin;
@@ -15,16 +15,16 @@ export class EmberPluginSettingTab extends PluginSettingTab {
     containerEl.empty();
 
     new Setting(containerEl)
-      .setName('Renderer URL')
-      .setDesc('Default date format')
+      .setName("Renderer URL")
+      .setDesc("URL of the Ember renderer")
       .addText((text) =>
         text
-          .setPlaceholder('http://localhost:4200')
+          .setPlaceholder("http://localhost:4200")
           .setValue(this.plugin.settings.renderUrl)
           .onChange(async (value) => {
             this.plugin.settings.renderUrl = value;
             await this.plugin.saveSettings();
-          })
+          }),
       );
   }
 }
