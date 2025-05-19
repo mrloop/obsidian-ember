@@ -38,6 +38,7 @@ jobs:
           gh release create "$tag" \
             --title="$tag" \
             main.js manifest.json styles.css
+
       - name: Deploy preview
         uses: netlify/actions/cli@master
         with:

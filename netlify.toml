@@ -1,3 +1,3 @@
 [build]
-  command = "pnpm --filter preview run build"
+  command = "pnpm --filter preview install && pnpm --filter preview run build"
   publish = "packages/preview/dist"
