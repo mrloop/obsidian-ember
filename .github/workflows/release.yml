@@ -6,7 +6,7 @@ on:
       - "*"
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -33,3 +33,10 @@ jobs:
           gh release create "$tag" \
             --title="$tag" \
             main.js manifest.json styles.css
+      - name: Deploy preview
+        uses: netlify/actions/cli@master
+        with:
+          args: deploy --filter packages/preview --prod
+        env:
+          NETLIFY_SITE_ID: e85256f4-f552-41d1-abd8-c745ef74c3fc
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}

@@ -1,0 +1,3 @@
+[build]
+  command = "pnpm --filter packages/preview... run build"
+  publish = "packages/preview/dist"
