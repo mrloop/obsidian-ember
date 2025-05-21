@@ -1,6 +1,6 @@
 {
   "name": "preview",
-  "version": "1.3.4",
+  "version": "1.4.0",
   "private": true,
   "description": "Preview component for obsidian ember plugin",
   "repository": "",
