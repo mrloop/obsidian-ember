@@ -21,7 +21,7 @@ You will need the following things properly installed on your computer.
 ## Running / Development
 
 - `pnpm start`
-- Visit your app at [http://localhost:4200](http://localhost:4200?lang=gjs&source=<template>my template</template>).
+- Visit your app at [http://localhost:4200](http://localhost:4200?lang=gjs&source=%3Ctemplate%3Emy%20template%3C%2Ftemplate%3E).
 - Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
 
 
