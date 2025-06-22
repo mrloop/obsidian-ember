@@ -2,6 +2,13 @@ import * as http from "http";
 import * as url from "url";
 import * as path from "path";
 
+function isErrorWithCode(error: unknown): error is Error & { code: string } {
+  return (
+    error instanceof Error &&
+    typeof (error as Error & { code?: string }).code === "string"
+  );
+}
+
 export class LocalHttpServer {
   private server: http.Server | null = null;
   private port: string;
@@ -35,9 +42,9 @@ export class LocalHttpServer {
           const mimeType = this.getMimeType(pathname);
           res.writeHead(200, { "Content-Type": mimeType });
           res.end(Buffer.from(data));
-        } catch (err: any) {
+        } catch (err: unknown) {
           console.error(err);
-          if (err.code === "ENOENT") {
+          if (isErrorWithCode(err) && err.code === "ENOENT") {
             res.writeHead(404, { "Content-Type": "text/plain" });
             res.end("File not found");
           } else {
@@ -53,7 +60,7 @@ export class LocalHttpServer {
         resolve();
       });
 
-      this.server.on("error", (err: any) => {
+      this.server.on("error", (err: Error) => {
         this.server = null;
         console.error("Server error:", err);
         reject(err);
