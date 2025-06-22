@@ -17,7 +17,7 @@ See the monorepo [README.md](../../README.md) for instructions on how to release
 
 ## Manually installing the plugin
 
-- Copy over `main.js`, `styles.css`, `manifest.json` to your vault `VaultFolder/.obsidian/plugins/obsidian-ember/`.
+- Copy over `main.js`, `manifest.json` to your vault `VaultFolder/.obsidian/plugins/obsidian-ember/`.
 
 ## Symbolic linking plugin for development
 
