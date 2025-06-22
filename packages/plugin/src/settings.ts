@@ -15,7 +15,7 @@ export class EmberPluginSettingTab extends PluginSettingTab {
     containerEl.empty();
 
     new Setting(containerEl)
-      .setName("Local Renderer URL Port for desktop")
+      .setName("Local renderer URL port for desktop")
       .setDesc("Port of the local Ember renderer")
       .addText((text) =>
         text
@@ -28,7 +28,7 @@ export class EmberPluginSettingTab extends PluginSettingTab {
       );
 
     new Setting(containerEl)
-      .setName("Remote Renderer URL for mobile")
+      .setName("Remote renderer URL for mobile")
       .setDesc("Due to restrictions on mobile a remote renderer is used")
       .addText((text) =>
         text
