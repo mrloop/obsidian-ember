@@ -33,7 +33,6 @@ export class LocalHttpServer {
         const parsedUrl = url.parse(req.url || "/", true);
         let pathname = decodeURIComponent(parsedUrl.pathname || "/");
 
-        console.log(`Server request: ${req.method} ${pathname}`);
         if (pathname === "/") {
           pathname = "/index.html";
         }
@@ -55,10 +54,7 @@ export class LocalHttpServer {
         }
       });
 
-      this.server.listen(this.port, () => {
-        console.log(`Preview server started on http://localhost:${this.port}`);
-        resolve();
-      });
+      this.server.listen(this.port, resolve);
 
       this.server.on("error", (err: Error) => {
         this.server = null;
@@ -72,7 +68,6 @@ export class LocalHttpServer {
     return new Promise((resolve) => {
       if (this.server) {
         this.server.close(() => {
-          console.log(`Local server on port ${this.port} stopped.`);
           this.server = null;
           resolve();
         });
@@ -82,7 +77,6 @@ export class LocalHttpServer {
           resolve();
         });
       } else {
-        console.log("Server is not running.");
         resolve();
       }
     });
