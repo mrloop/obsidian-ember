@@ -1,4 +1,4 @@
-# Obsidian Ember Plugin
+# Ember Plugin for Obsidian
 
 This is the Ember plugin for Obsidian (https://obsidian.md). It previews `gjs` code blocks in Obsidian.
 

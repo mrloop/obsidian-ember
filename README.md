@@ -1,6 +1,6 @@
-# Obsidian Ember Plugin
+# Ember Plugin for Obsidian
 
-This is the monorepo for the Obsidian Ember plugin and preview app. It previews `gjs` code blocks in [Obsidian](https://obsidian.md).
+This is the monorepo for the Ember plugin for Obsidian and preview app. It previews `gjs` code blocks in [Obsidian](https://obsidian.md).
 
 https://github.com/user-attachments/assets/ee3a1d97-fe3e-4eaa-a4f2-410956ee95bd
 

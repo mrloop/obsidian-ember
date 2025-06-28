@@ -1,6 +1,6 @@
 # preview
 
-This is an Ember application used in the Obsidian Ember plugin to preview `gjs` code blocks in Obsidian.
+This is an Ember application used in the Ember plugin for Obsidian to preview `gjs` code blocks in Obsidian.
 
 ## Prerequisites
 
