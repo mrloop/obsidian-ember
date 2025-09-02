@@ -24,7 +24,6 @@ You will need the following things properly installed on your computer.
 - Visit your app at [http://localhost:4200](http://localhost:4200?lang=gjs&source=%3Ctemplate%3Emy%20template%3C%2Ftemplate%3E).
 - Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
 
-
 ### Code Generators
 
 Make use of the many generators for code, try `ember help generate` for more details
